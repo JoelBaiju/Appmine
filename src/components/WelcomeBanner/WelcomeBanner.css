@@ -1,0 +1,19 @@
+
+.welcomebannergradient {
+    transform: translatey(-55%); 
+    background: radial-gradient(ellipse  120% 50%, #5e6e1b 1%, #ffffff00 50% ,#ffffff00 100%);
+    background-size: 100% 100%;
+    background-position: center bottom; 
+    
+}
+
+
+.welcomebannerimage{
+    background-image: url('../../assets/images/WelcomeBannerBG.jpg');
+    background-size: contain;
+    /* background-size: 70% auto;  */
+    background-position: center; 
+    background-repeat: no-repeat;
+    filter: brightness(5%); /* Reduce brightness to simulate opacity */
+
+}

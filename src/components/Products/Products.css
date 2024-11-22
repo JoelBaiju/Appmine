@@ -1,0 +1,60 @@
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+  /* Carousel Items */
+  .carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 10px;
+    opacity: 0.5; /* Faded appearance */
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+  }
+  
+  .carousel-item.active {
+    opacity: 1; /* Highlighted appearance */
+    transform: scale(1); /* Enlarged */
+    background-color: #f7b42c;
+  }
+  
+  .carousel-item.inactive {
+    opacity: 0.5; /* Faded */
+    transform: scale(0.9);
+  }
+  
+  /* Navigation Buttons */
+  .nav-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  .nav-button:hover {
+    background-color: #333;
+  }
+  

@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px); /* Start slightly below */
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* Fully opaque */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+@keyframes rise {
+  0% {
+    transform: translateY(50px); /* Start slightly below */
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* Fully opaque */
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+@keyframes slide {
+  0%{
+      transform: translateX(50px); /* Start slightly below */
+      opacity: 0; /* Start fully transparent */
+  }
+  100% {
+      transform: translateX(0); /* End at original position */
+      opacity: 1; /* Fully opaque */
+    }
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Apply animation to the text elements */
+.fall-animation {
+  animation: fall 0.5s ease-out forwards; /* Adjust duration and easing as needed */
+}
+.rise-animation {
+  animation: rise 0.5s ease-out forwards; /* Adjust duration and easing as needed */
+}
+
+.slide-animation {
+  animation : slide 0.9s ease-out forwards;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Light gray background */
+  border-radius: px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b4b4b; /* Dark gray handle */
+  border-radius: 10px;
+}
+
+
+.gradient-text {
+  background: linear-gradient(to right, #1f250b, #c5e937, #23290b);
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+}
+.gradient-text-gray {
+  background: linear-gradient(to right, #646464, #939393, #9b9b9b);
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+}
+
+.gradient-text-blue {
+  background: linear-gradient(to right, #003083, #2b79ff,#023287);
+   background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+}
+.gradient-text-pink {
+  /* background: linear-gradient(to right, #612C70, #B03E95); */
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+}
+
+.gradient-border {
+  background-image: linear-gradient(to right, #1f250b, #c5e937, #23290b); /* Apply the gradient */
+  border-radius: 5rem; /* Apply rounded corners */
 }

@@ -1,0 +1,48 @@
+.burger {
+    position: relative;
+    width: 25px; /* Adjusted width */
+    height: 15px; /* Adjusted height */
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 3px; /* Adjusted height */
+    width: 100%;
+    background: rgb(131, 131, 131);
+    border-radius: 6px; /* Adjusted border radius */
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0; /* Top bar */
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 100%; /* Bottom bar */
+    transform: translateY(-100%);
+    transform-origin: left center;
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg); /* Cross effect */
+    top: 50%; /* Center the bar when clicked */
+    transform-origin: center center;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+    transform: rotate(-45deg); /* Cross effect */
+    top: 50%; /* Center the bar when clicked */
+    transform-origin: center center;
+}
