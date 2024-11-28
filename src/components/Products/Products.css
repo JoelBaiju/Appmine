@@ -1,60 +1,42 @@
-/* Carousel Container */
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 20px auto;
+
+  
+
+.productscurrent{
+    background-color: rgba(255, 255, 255, 0.097);
+}
+
+.productscurrent img {
+    transition: opacity 0.5s ease-in-out;
   }
   
-  /* Carousel Items */
-  .carousel {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
+  .transition-opacity {
+    transition: opacity 0.5s ease-in-out;
   }
-  
-  .carousel-item {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #ddd;
-    border-radius: 10px;
-    opacity: 0.5; /* Faded appearance */
-    transform: scale(0.9);
-    transition: all 0.5s ease;
-  }
-  
-  .carousel-item.active {
-    opacity: 1; /* Highlighted appearance */
-    transform: scale(1); /* Enlarged */
-    background-color: #f7b42c;
-  }
-  
-  .carousel-item.inactive {
-    opacity: 0.5; /* Faded */
-    transform: scale(0.9);
-  }
-  
-  /* Navigation Buttons */
-  .nav-button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 0 10px;
-  }
-  
-  .nav-button:hover {
-    background-color: #333;
-  }
-  
+
+
+
+
+
+  /* .inactive {
+    filter: grayscale(100%);
+    scale: 50%;
+}
+.active{
+    filter: grayscale(0%);
+    scale: 100%;
+    transition: filter 0.3s ease, scale 0.3s ease; /* Smooth transition for property changes */
+
+/* } */ 
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.text-transition {
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}

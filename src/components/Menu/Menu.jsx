@@ -1,10 +1,19 @@
 import React from 'react'
 import './Menu.css'
-function Menu() {
+function Menu({droped,magic1,magic2}) {
+  const just=()=>{
+    console.log('checked',droped)
+    if(droped){
+      magic2()
+    }
+    else{
+      magic1()
+    }
+  }
   return (
     <div>
         <label class="burger" for="burger">
-            <input type="checkbox" id="burger"/>
+            <input onChange={just} type="checkbox" id="burger"/>
             <span></span>
             <span></span>
             {/* <span></span> */}

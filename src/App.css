@@ -44,10 +44,10 @@
 
 /* Apply animation to the text elements */
 .fall-animation {
-  animation: fall 0.5s ease-out forwards; /* Adjust duration and easing as needed */
+  animation: fall 1s ease-out forwards; /* Adjust duration and easing as needed */
 }
 .rise-animation {
-  animation: rise 0.5s ease-out forwards; /* Adjust duration and easing as needed */
+  animation: rise 1s ease-out forwards; /* Adjust duration and easing as needed */
 }
 
 .slide-animation {
@@ -74,7 +74,7 @@
 
 .gradient-text {
   background: linear-gradient(to right, #1f250b, #c5e937, #23290b);
-  -webkit-background-clip: text; /* Clips the background to the text */
+  background-clip: text; /* Clips the background to the text */
   -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
 }
 .gradient-text-gray {

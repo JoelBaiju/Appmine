@@ -4,6 +4,12 @@
     background-size: cover;
 } */
 
+.appsbg{
+    background-image: url('../../assets/images/Mountain View.gif');
+    background-position: right;
+    background-size: cover;
+}
+
 .appsheading{
     background-color: rgba(255, 255, 255, 0.403);
 }
@@ -16,7 +22,7 @@
 
 .game{
     box-shadow: 
-    rgba(241, 197, 201, 0.25) 0px 54px 85px 20px, /* Increased blur and added spread */
+    rgba(241, 197, 201, 0.25) 0px 54px 85px 20px, 
     rgba(241, 197, 201, 0.12) 0px -12px 50px 10px, 
     rgba(241, 197, 201, 0.12) 0px 4px 16px 5px, 
     rgba(88, 88, 88, 0.17) 0px 12px 23px 15px, 
@@ -28,4 +34,13 @@
 
 .aitext{
     color: rgba(255, 255, 255, 0.49);
+}
+
+.glassgray{
+    backdrop-filter: blur(10px);
+    
+}
+
+.webBg{
+    background-color: #03040D;
 }

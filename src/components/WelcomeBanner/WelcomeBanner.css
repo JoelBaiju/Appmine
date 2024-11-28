@@ -1,19 +1,74 @@
-
+/* 
 .welcomebannergradient {
     transform: translatey(-55%); 
     background: radial-gradient(ellipse  120% 50%, #5e6e1b 1%, #ffffff00 50% ,#ffffff00 100%);
     background-size: 100% 100%;
     background-position: center bottom; 
     
+} */
+
+.welcomebannergradient {
+    transform: translateY(-55%);
+    background: radial-gradient(ellipse 120% 50%, #5e6e1b 1%, #ffffff00 50%, #ffffff00 100%);
+    background-size: 200% 100%; /* Extend width for horizontal movement */
+    background-position: 0% center; /* Start from the left */
+
+    /* Animate horizontal movement */
+    animation: moveGradientHorizontally 6s ease-in-out infinite;
+}
+
+/* Define the animation */
+@keyframes moveGradientHorizontally {
+    0% {
+        background-position: 0% center; /* Start at the left */
+    }
+    50% {
+        background-position: 100% center; /* Move to the right */
+    }
+    100% {
+        background-position: 0% center; /* Return to the left */
+    }
 }
 
 
 .welcomebannerimage{
     background-image: url('../../assets/images/WelcomeBannerBG.jpg');
-    background-size: contain;
+    background-size: cover;
     /* background-size: 70% auto;  */
     background-position: center; 
     background-repeat: no-repeat;
-    filter: brightness(5%); /* Reduce brightness to simulate opacity */
+    filter: brightness(100%); /* Reduce brightness to simulate opacity */
 
 }
+.welcomebannerimagephone{
+    background-image: url('../../assets/images/Appmine logo B.png');
+    background-size: cover;
+    /* background-size: 70% auto;  */
+    background-position: center; 
+    background-repeat: no-repeat;
+    filter: brightness(10%); 
+}
+
+
+
+body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+canvas{ display: block; }
+
+#particles-js{  position:absolute;
+                width: 100%; 
+                height: 100%; 
+                background-color: #000000; 
+
+}
+
+
+
+.count-particles{    
+                    margin-top: 5px; 
+                    margin-left: 5px; } 
+                    
+#stats{ border-radius: 3px 3px 0 0; 
+        overflow: hidden; } 
+        
+.count-particles{ border-radius: 0 0 3px 3px; }
+    
