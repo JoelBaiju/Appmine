@@ -89,7 +89,7 @@ function WeBuild() {
                 <img className='w-8/12 md:w-5/12 rounded-xl m-10 game border-1  border-black' src={Game} alt="" />
                 
 
-                <p className='text-gray-300 font-normal text-sm md:text-lg text-center m-5 z-20 mb-10'>Our expert team builds robust applications <br /> for both ios and android</p>
+                <p className='text-gray-300 font-normal text-sm md:text-lg text-center m-5 z-20 mb-10'>We build immersive and high-performance games <br /> for both mobile and desktop platforms.</p>
 
                 <img className='absolute translate-y-24 md:translate-y-32 w-5/12 md:w-4/12 ' src={joystick} alt="" />
             </div>

@@ -78,13 +78,13 @@ import tripifyme from '../../assets/images/tripifyme.png';
 function Clients() {
     const squares = [
         { logo: '' }, { logo: '' }, { logo: '' }, { logo: skystream }, { logo: inticure }, { logo: '' }, { logo: '' }, { logo: '' },
-        { logo: '' }, { logo: '' }, { logo: trainonex }, { logo: tripifyme }, { logo: spenmax }, { logo: kriyado }, { logo: '' }, { logo: '' },
-        { logo: '' }, { logo: '' }, { logo: '' }, { logo: icareindia }, { logo: letmego }, { logo: '' }, { logo: '' }, { logo: '' },
+        { logo: '' }, { logo: '' }, { logo: trainonex }, { logo: tripifyme }, { logo: spenmax }, { logo: '' }, { logo: '' }, { logo: '' },
+        { logo: '' }, { logo: '' }, { logo: '' }, { logo: icareindia }, { logo: '' }, { logo: '' }, { logo: '' }, { logo: '' },
     ];
     const squares2 = [
         { logo: '' }, { logo: skystream }, { logo: inticure }, { logo: '' } ,
-        { logo: trainonex }, { logo: tripifyme }, { logo: spenmax }, { logo: kriyado },
-        { logo: '' }, { logo: icareindia }, { logo: letmego }, { logo: '' } ,
+        { logo: trainonex }, { logo: tripifyme }, { logo: spenmax }, { logo: '' },
+        { logo: '' }, { logo: icareindia }, { logo: '' }, { logo: '' } ,
     ];
 
 

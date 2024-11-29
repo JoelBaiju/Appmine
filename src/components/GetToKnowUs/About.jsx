@@ -9,7 +9,27 @@ import { div } from 'framer-motion/client';
 function About() {
     gsap.registerPlugin(ScrollTrigger);
 
+    // useEffect(() => {
+    //     ScrollTrigger.create({
+    //         trigger: "#about-image",
+    //         start: "top top",
+    //         end: () => {
+    //             const aboutMain = document.querySelector("#about-main");
+    //             const aboutImage = document.querySelector("#about-image");
+                
+    //             // Use getBoundingClientRect for accurate measurements
+    //             const aboutMainHeight = aboutMain.getBoundingClientRect().height;
+    //             const aboutImageHeight = aboutImage.getBoundingClientRect().height;
+    //             return `+=${aboutMainHeight - aboutImageHeight}`;
+    //         },
+    //         pin: true,
+    //         scrub: true,
+    //         invalidateOnRefresh: true, // Recalculates on screen refresh/resizing
+    //     });
 
+    //     // Clean up to avoid duplicate triggers
+    //     return () => ScrollTrigger.killAll();
+    // }, []);
 
 
     useEffect(() => {
@@ -56,49 +76,8 @@ function About() {
 
   return (
     
-//     <div className='about-main relative' id='about-main'>
-//         <img src={aboutusbg} id='aboutimage' className='w-full h-screen about-image absolute z-10 ' alt="" />
-
-//         <div className="container relative z-20">
-//             <div className=" h-screen w-full a flex flex-col justify-center backdrop-blur-md bg-black/80 items-center">
-//                 <h1 className='text-5xl md:text-8xl poppins text-white font-semibold '> 
-//                     About<span className='gradient-text'>Us</span>   
-//                 </h1>
-            
-//             </div>         
-           
-        
-//             <div id='about-s2' className=" bg-black  w-full a flex flex-col justify-center  items-">
-//                 <div className='w-full text-center px-5 py-32 '>
-//                     <p className='text-white font-light poppins text-base md:text-lg'>
-//                         At
-//                         <span className='gradient-text text-2xl md:text-3xl font-semibold poppins'> Appmine Studio</span> 
-//                         , we don’t just build software; we create experiences that leave a lasting impact.
-//                         Every line of code, every feature, and every interface is crafted with purpose and passion. 
-//                         For us, development is more than a skill—it’s an art form. We pour our creativity, 
-//                         expertise, and dedication into every project, transforming ideas into solutions that inspire, 
-//                         empower, and elevate. This isn’t just what we do; it’s who we are.   
-//                     </p>
-//                 </div>  
-               
-//             </div>    
-
-       
-
-       
-
-            
-//         </div>
-       
-//     </div>
-
-
-
-
-
-
-    <div className='w-full relative bg-slate-600' id='about-main'> 
-        <div className='aboutusbg w-full h-screen absolute z-10' id='about-image'></div>
+    <div className='w-full relative bg-slate-600 min-h-svh' id='about-main'> 
+        <div className='aboutusbg w-full h-screen absolute z-10 hidden md:block' id='about-image'></div>
 
 
         <div className="relative h-screen w-full z-20 flex flex-col justify-center backdrop-blur-md bg-black/80 items-center">
