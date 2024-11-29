@@ -285,9 +285,7 @@ function GetToKnowUs() {
                             <div className="w-full" id="about" >
                                 <About/>
                             </div>
-                            <div className='w-full h-screen'>
-
-                            </div> 
+                          
 
                         </div>
                     </div>

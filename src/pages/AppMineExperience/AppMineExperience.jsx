@@ -5,6 +5,7 @@ import WeBuild from '../../components/WeBuild/WeBuild'
 import Products from '../../components/Products/Products'
 import GetToKnowUs from '../../components/GetToKnowUs/GetToKnowUs'
 import TextRevealByWord from '../../components/MagicUi/TextRevealByWord'
+import Footer from '../../components/Footer/Footer'
 
 function AppMineExperience() {
 
@@ -30,10 +31,8 @@ function AppMineExperience() {
         <WeBuild/>
         <Products/>
         <GetToKnowUs/>
-   
-        <div className='w-2 h-screen bg-slate-50'>
-        
-        </div>
+        <Footer/>
+ 
     </div>
   )
 }
