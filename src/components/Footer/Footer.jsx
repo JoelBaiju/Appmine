@@ -8,7 +8,7 @@ function Footer() {
             <img src={appminelogo} className='h-52  opacity-60' alt="" />
         </div>
         <div className='text-white font-extralight m-10 poppins text-base'>
-            <h1 className='font-semibold pb-5'>Contact</h1>
+            <h1 className='font-semibold pb-5'>Company</h1>
             <div>
               <p>About Us</p>
               <p>Careers</p>
@@ -16,7 +16,7 @@ function Footer() {
            
         </div> 
         <div className='text-white poppins m-10 font-extralight text-base'>
-            <h1 className='font-semibold pb-5'>Technology</h1>
+            <h1 className='font-semibold pb-5'>We Build</h1>
             <div>
               <p>Web Development</p>
               <p>App Development</p>
@@ -36,6 +36,12 @@ function Footer() {
                   Thiruvananthapuram,<br />
                   Kerala 695581</p>
               <p>Ph : 7034730964</p>
+            </div>
+           
+        </div>   
+        <div className='text-white poppins m-10 font-extralight text-base'>
+            <div>
+              
             </div>
            
         </div>
