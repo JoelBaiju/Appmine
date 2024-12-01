@@ -30,12 +30,12 @@ function About() {
                     end: `+=${scrollduration}`,
                     pin: true,
                     scrub: true,
-                    markers: {
-                        startColor: "green",
-                        endColor: "red",
-                        fontSize: "14px",
-                        indent: 20,
-                    },
+                    // markers: {
+                    //     startColor: "green",
+                    //     endColor: "red",
+                    //     fontSize: "14px",
+                    //     indent: 20,
+                    // },
                     onUpdate: (self) => {
                         const textElement = document.querySelector("#about-text");
                         const titleElement = document.querySelector("#about-title");
