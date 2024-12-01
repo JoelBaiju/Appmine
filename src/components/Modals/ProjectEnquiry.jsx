@@ -17,7 +17,7 @@ function ProjectEnquiry({closemodal}) {
           <p className='text-white text-sm md:text-base font-extralight poppins w-3/4 pt-5'>Share your vision with us, and together we’ll bring your ideas to life. Reach out today to start creating something extraordinary!</p>
         </div>
    
-        <div className='w-full h-5/6 rounded-2xl md:pt-0 pt-10'>
+        <div className='w- h-5/6 rounded-2xl md:pt-0 pt-10'>
 
           <div className='w-full flex flex-col '>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Name</label>
@@ -36,12 +36,13 @@ function ProjectEnquiry({closemodal}) {
             <input type="text" className='text-white text-base p-2 w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
 
-          <div className='flex flex-row justify-end mt-10'>
-            <button className=' text-white px-5 py-1 text-base'>Send</button>
-          </div>
+         
         </div>
 
       </div>
+          <div className='flex flex-row justify-end mt-10 '>
+            <button className=' text-white border-2 border-neutral-400 rounded-3xl px-10 py-1 text-base'>Send</button>
+          </div>
     </ShineBorder>
 
   )
