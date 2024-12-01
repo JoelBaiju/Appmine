@@ -11,29 +11,29 @@ function ProjectEnquiry({closemodal}) {
         <button onClick={(e)=>closemodal('projectenquiry')} className='text-white pb-16'>Close</button>
       </div>
 
-      <div className='overflow-y-scroll md:h-full h-2/3 flex flex-col md:flex-row items-center  justify-around w-full'>
+      <div className='overflow-y-scroll removescrollbar h-full  flex flex-col md:flex-row items-center  justify-around w-full'>
         <div>
           <h1 className='gradient-text-gray proppins text-5xl md:text-7xl'>Let’s <span className='gradient-text'>Collaborate!</span></h1>
           <p className='text-white text-sm md:text-base font-extralight poppins w-3/4 pt-5'>Share your vision with us, and together we’ll bring your ideas to life. Reach out today to start creating something extraordinary!</p>
         </div>
    
-        <div className=' h-5/6 rounded-2xl md:pt-0 pt-10'>
+        <div className='w-full h-5/6 rounded-2xl md:pt-0 pt-10'>
 
-          <div className='flex flex-col '>
+          <div className='w-full flex flex-col '>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Name</label>
-            <input type="text" className='text-white text-base p-2 w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='text-white text-base p-2 w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
-          <div className='flex flex-col mt-10'>
+          <div className='w-full flex flex-col mt-10'>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Company Name</label>
-            <input type="text" className='text-white text-base p-2 w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='text-white text-base p-2 w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
-          <div className='flex flex-col mt-10'>
+          <div className='w-full flex flex-col mt-10'>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Phone</label>
-            <input type="text" className='text-white text-base p-2 w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='text-white text-base p-2 w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
-          <div className='flex flex-col mt-10'>
+          <div className='w-full flex flex-col mt-10'>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Email</label>
-            <input type="text" className='text-white text-base p-2 w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='text-white text-base p-2 w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
 
           <div className='flex flex-row justify-end mt-10'>

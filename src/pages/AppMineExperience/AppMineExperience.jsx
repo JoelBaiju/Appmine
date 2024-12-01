@@ -31,7 +31,7 @@ function AppMineExperience() {
         <WeBuild/>
         <Products/>
         <GetToKnowUs/>
-        <Footer/>
+        <Footer/>     
  
     </div>
   )

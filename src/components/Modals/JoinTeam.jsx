@@ -1,6 +1,6 @@
 import React from 'react'
 import { ShineBorder } from '../MagicUi/ShineBorder'
-
+import './Modals.css'
 
 function JoinTeam({closemodal}) {
   return (
@@ -10,29 +10,29 @@ function JoinTeam({closemodal}) {
         <button onClick={(e)=>closemodal('jointeam')} className='text-white pb-16'>Close</button>
       </div>
 
-      <div className='overflow-y-scroll h-2/3 md:h-full flex flex-col md:flex-row items-center  justify-around w-full'>
+      <div className='overflow-y-scroll removescrollbar h-full flex flex-col md:flex-row items-center  justify-around w-full'>
         <div>
           <h1 className='gradient-text-gray proppins text-5xl md:text-7xl'>Let’s Build <span className='gradient-text'>Together!</span></h1>
           <p className='text-white text-sm md:text-base font-extralight poppins w-3/4 pt-5'>Join a team that values creativity, collaboration, and continuous learning. Together, we’ll reach new heights!</p>
         </div>
    
-        <div className=' h-5/6 rounded-2xl md:pt-0 pt-10'>
+        <div className=' h-5/6 rounded-2xl w-full md:pt-0 pt-10'>
 
-          <div className='flex flex-col '>
+          <div className='flex flex-col w-full '>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Name</label>
-            <input type="text" className='w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='w-  md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
-          <div className='flex flex-col mt-10'>
+          <div className='flex flex-col mt-10 w-full'>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Interested Position</label>
-            <input type="text" className='w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
-          <div className='flex flex-col mt-10'>
+          <div className='flex flex-col mt-10 w-full'>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Phone</label>
-            <input type="text" className='w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
-          <div className='flex flex-col mt-10'>
+          <div className='flex flex-col mt-10 w-full'>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Email</label>
-            <input type="text" className='w-100 md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
+            <input type="text" className='w-full md:w-122 h-10 bg-transparent border-2 border-white/30 rounded-lg ' id='name'  />
           </div>
 
           <div className='flex flex-row justify-end mt-10'>

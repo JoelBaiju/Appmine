@@ -10,3 +10,8 @@
   background-image: url('../../assets/images/AboutBG.jpg');
   background-position: center;
 }
+
+
+#about-title{
+  transition: all ease-in 500;
+}

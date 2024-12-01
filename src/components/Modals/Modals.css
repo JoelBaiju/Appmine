@@ -1,0 +1,9 @@
+.removescrollbar {
+    overflow-y: scroll; /* Enables scrolling */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .removescrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  

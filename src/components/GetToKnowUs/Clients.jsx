@@ -96,7 +96,7 @@ function Clients() {
     
 
     return (
-        <div className="pt-36 pb-80">
+        <div className="pt-36 ">
             <div className="text-white poppins flex flex-col items-center w-full bg-neutral-950">
                 <div className="flex flex-col items-center ">
                     <h1 className="font-bold poppins-semibold text-4xl text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
