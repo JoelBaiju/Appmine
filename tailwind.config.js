@@ -63,6 +63,8 @@ module.exports = {
       },      
 
       colors: {
+        appminedark:'#1f250b',
+        appmine:'#8ba328',
         border: "#849B25",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

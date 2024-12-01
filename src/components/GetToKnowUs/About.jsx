@@ -98,18 +98,18 @@ function About() {
 
   return (
     
-    <div className='w-full relative bg-white/50' id='about-main'> 
+    <div className='w-full bg-gradient-to-br from-black  via-appmine to-black  relative bg-white/50' id='about-main'> 
        
-        <div className='aboutusbg w-full h-screen  absolute z-10 ' > </div> 
+        <div className='aboutusbg brightness-50 w-full h-screen  absolute z-10 ' > </div> 
 
 
-        <div id='about-image' className="relative h-screen w-full z-20 flex flex-col justify-center backdrop-blur-md bg-black/80 items-center">
-            <h1 id='about-title' className=' poppins text-5xl md:text-8xl py-3 text-start  text-white font-regular' >
+        <div id='about-image' className="relative h-screen w-full z-20 flex flex-col justify-center backdrop-blur-md  items-center">
+            <h1 id='about-title' className=' poppins text-5xl md:text-8xl py-3 text-center  text-white font-regular' >
                 <span id='about-high-start' className='gradient-text'></span>
                 <span id='about-nothigh'></span> 
                 <span id='about-high-end' className='gradient-text'></span>
             </h1>
-            <p className='poppins px-20 text-white text-start text-xl font-extralight ' id='about-text'></p>
+            <p className='poppins px-20 text-white text-center text-xl font-extralight ' id='about-text'></p>
 
 
         </div>      
