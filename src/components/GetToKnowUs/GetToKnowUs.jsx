@@ -282,9 +282,9 @@ function GetToKnowUs() {
                             <div className="w-full" id="clients">
                                 <Clients/>
                               </div> 
-                            <div className="w-full" id="about" >
+                            {/* <div className="w-full" id="about" >
                                 <About/>
-                            </div>
+                            </div> */}
                           
 
                         </div>
