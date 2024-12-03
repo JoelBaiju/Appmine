@@ -16,7 +16,7 @@ function JoinTeam({closemodal}) {
           <p className='text-white text-sm md:text-base font-extralight poppins w-3/4 pt-5'>Join a team that values creativity, collaboration, and continuous learning. Together, we’ll reach new heights!</p>
         </div>
    
-        <div className=' h-5/6 rounded-2xl w- md:pt-0 pt-10'>
+        <div className=' h-5/6 rounded-2xl  md:pt-0 pt-10'>
 
           <div className='flex flex-col w-full '>
             <label htmlFor="name" className='text-white text-base font-light pr-3 poppins'>Name</label>
