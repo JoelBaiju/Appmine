@@ -5,6 +5,10 @@
   font-family: 'Cormorant Garamond';
 }
 
+.kantumruy {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+}
 
 
 @keyframes fall {

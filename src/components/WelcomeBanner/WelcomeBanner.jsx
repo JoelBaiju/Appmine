@@ -26,7 +26,7 @@ function WelcomeBanner() {
         <div className='text-white  flex items-center flex-col justify-center rise-animation absolute z-20'>
 
 
-          <h1 className=" poppins font-semibold md:font-medium poppins  gradient-text text-center text-4xl md:text-8xl leading-" >
+          <h1 className=" poppins font-semibold md:font-medium poppins  gradient-text text-center text-4xl md:text-8xl" >
             Welcome To <br/> Appmine Studio
           </h1>
 

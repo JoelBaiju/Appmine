@@ -18,6 +18,7 @@ import Portfolio from "./Portfolio";
 import Clients from "./Clients";
 import './Gettoknowus.css'
 import About from "./About";
+import Scrollin from "./Scrollin";
 gsap.registerPlugin(ScrollTrigger);
 
 function GetToKnowUs() {
@@ -264,16 +265,16 @@ function GetToKnowUs() {
                 </div>
 
                 <div className="w-full">
-                    <div className="w-full bg-black   flex flex-col md:flex-row relative">
-                        <div className="md:w-2/12 h-20 flex flex-row md:flex-col justify-center md:h-screen abolute  z-30 bg-black" id="left"> 
-                            <h1 className="navigations text-sm md:text-3xl poppins font-medium m-5 text-neutral-700" id="portfolionav" onClick={viewportfolio}>Portfolio</h1>
-                            <h1 className="navigations text-xs md:text-3xl poppins font-medium m-5 text-neutral-700" id="clientsnav"   onClick={viewclients}>Clients</h1>
-                            {/* <h1 className="navigations text-xs md:text-3xl poppins font-medium m-5 text-neutral-700" id="storynav">Our Story</h1> */}
-                            <h1 className="navigations text-xs md:text-3xl poppins font-medium m-5 text-neutral-700" id="aboutnav"     onClick={viewabout}>About Us</h1>
+                    <div className="w-full bg-black flex flex-col relative">
+                        <div className="  flex flex-row backdrop-blur-lg  justify-center abolute back z-30 p-3 gap-5 bg-black/20" id="left"> 
+                            <h1 className="navigations text-sm md:text-lg poppins font-medium  text-neutral-700" id="portfolionav" onClick={viewportfolio}>Portfolio</h1>
+                            <h1 className="navigations text-xs md:text-lg poppins font-medium  text-neutral-700" id="clientsnav"   onClick={viewclients}>Clients</h1>
+                            {/* <h1 className="navigations text-xs md:text-xl poppins font-medium m-5 text-neutral-700" id="storynav">Our Story</h1> */}
+                            <h1 className="navigations text-xs md:text-lg poppins font-medium  text-neutral-700" id="aboutnav"     onClick={viewabout}>About Us</h1>
                         </div>   
 
     
-                        <div className="md:w-10/12 bg-neutral-950 " id="right">
+                        <div className="w-full bg-neutral-950 " id="right">
 
                             <div className="w-full" id="portfolio">
                                 <Portfolio  portfoliodata={portfoliodata}/>
@@ -282,8 +283,9 @@ function GetToKnowUs() {
                             <div className="w-full" id="clients">
                                 <Clients/>
                               </div> 
-                            <div className="h-screen w-full" id="about" >
+                            <div className="w-full" id="about" >
                                 {/* <About/> */}
+                                <Scrollin/>
                             </div>
                           
 
