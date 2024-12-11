@@ -5,10 +5,10 @@ function MotoCards({ head, body,color }) {
         <div className='w-full text-center md:w-3/12 h-40 bg-ppmine relative flex-col items-center justify-center'>
             
             <div className=''>
-                <h1 className='text-5xl text-black kantumruy'>{head}</h1>
+                <h1 className='text-5xl text-white kantumruy'>{head}</h1>
               
             </div>
-            <div className='text-center text-black  w-full'>
+            <div className='text-center text-white  w-full'>
                 <p className='kantumruy w-full text-xl'>{body}</p>
             </div>
 

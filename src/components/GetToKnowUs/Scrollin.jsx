@@ -268,7 +268,7 @@ function Scrollin() {
                 .fromTo("#box3", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 1 })
                 .to("#box3", { opacity: 0, duration: 0.5 })
 
-                .fromTo("#box4", {  filter: "blur(1rem)" ,backgroundColor:"black"}, { filter: "blur(0rem)",backgroundColor:"white", duration: 1 })
+                .fromTo("#box4", {  filter: "blur(1rem)" }, { filter: "blur(0rem)", duration: 1 })
                 .to("#box4", { opacity: 0, duration: 0.5 })
                 .fromTo("#box5", {  filter: "blur(1rem)" }, { filter: "blur(0rem)", duration: 1 })
         });
@@ -291,7 +291,7 @@ function Scrollin() {
                 .fromTo("#box3", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 0.5 })
                 .to("#box3", { opacity: 0, duration: 0.25 })
 
-                .fromTo("#box4", { filter: "blur(1rem)" ,backgroundColor:'black'}, {filter: "blur(0rem)",backgroundColor:'white', duration: 0.5 })
+                .fromTo("#box4", { filter: "blur(1rem)" }, {filter: "blur(0rem)", duration: 0.5 })
                 .to("#box4", { opacity: 0, duration: 0.25 })
                 .fromTo("#box5", { filter: "blur(1rem)" }, { filter: "blur(0rem)", duration: 0.5 })
         });
@@ -334,7 +334,7 @@ function Scrollin() {
                 <MotoCards color={'black'} head={'INNOVATION'} body={'Above all else we value quality. A project isn’t complete until it produces optimal results.'} />
                 <MotoCards color={'black'} head={'SERVICE'} body={'Providing the best customer experience is always top priority. Beyond providing a quality product, you’ll have a seamless experience.'} />
             </div>    
-            <div className=" w-screen h-screen flex md:flex-row flex-col gap-20 items-center bg-white justify-center absolute z-10" id="box5">
+            <div className=" w-screen h-screen flex md:flex-row flex-col gap-20 items-center  justify-center absolute z-10" id="box5">
                 <MotoCards color={'white'} head={'VALUE'} body={'Cost is irrelevant unless we provide the best value to our customers.'} />
                 <MotoCards color={'white'}  head={'INTEGRITY'} body={'We will only operate with the highest standard of integrity and honesty.'} />
                 <MotoCards color={'white'} head={'LOYALITY'} body={'We take care of our customers, partners, and our own.'} />
