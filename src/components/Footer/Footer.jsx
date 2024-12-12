@@ -1,89 +1,10 @@
-// import React from 'react'
-// import appminelogo from '../../assets/images/Appmine logo B.png'
-// function Footer() {
-//   return (
-
-//     <div className='w-full  flex flex-col md:flex-row pt-20 justify-around bg-neutral-950 p-5'>
-//         <div >
-//             <img src={appminelogo} className='h-52  opacity-60' alt="" />
-//         </div>
-//         <div className='text-white font-extralight m-10 poppins text-base'>
-//             <h1 className='font-semibold pb-5'>Company</h1>
-//             <div>
-//               <p>About Us</p>
-//               <p>Careers</p>
-//             </div>
-           
-//         </div> 
-//         <div className='text-white poppins m-10 font-extralight text-base'>
-//             <h1 className='font-semibold pb-5'>We Build</h1>
-//             <div>
-//               <p>Web Development</p>
-//               <p>App Development</p>
-//               <p>E-Commerce</p>
-//               <p>ERP Solutions</p>
-//             </div>
-           
-//         </div>  
-
- 
-        
-//         <div className='text-white poppins m-10 font-extralight text-base'>
-//             <h1 className='font-semibold pb-5'>Contact Us</h1>
-//             <div>
-//               <p>Phase 1, Thejaswini, <br />
-//                   Technopark Campus, <br />
-//                   Thiruvananthapuram,<br />
-//                   Kerala 695581</p>
-//               <p>Ph : 7034730964</p>
-//             </div>
-           
-//         </div>   
-//         <div className='text-white poppins m-10 font-extralight text-base'>
-//             <div>
-              
-//             </div>
-           
-//         </div>
-//     </div>
-    
-//   )
-// }
-
-// export default Footer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import appminelogo from '../../assets/images/Appmine logo B.png';
 
 function Footer() {
   return (
     <footer className="w-full bg-neutral-950 text-white py-10">
-      <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-5 gap-10">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start">
           <img src={appminelogo} className="h-20 mb-4 opacity-80" alt="Appmine Logo" />
@@ -121,11 +42,30 @@ function Footer() {
             <a href="tel:+917034730964" className="block mt-2 hover:text-white transition">Ph: 7034730964</a>
           </address>
         </div>
+
+        {/* Social Section */}
+        <div>
+          <h2 className="font-semibold text-lg mb-4">Social</h2>
+          <div className="flex space-x-4 text-gray-300">
+            <a href=" " target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+            <i class="fa-brands fa-instagram fa-xl" style={{color: "#ffffff;"}}></i>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+            <i class="fa-brands fa-facebook fa-xl" style={{color: "#ffffff;"}}></i>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+            <i class="fa-brands fa-linkedin fa-xl" style={{color: "#ffffff;"}}></i>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+            <i class="fa-brands fa-twitter fa-xl" style={{color: "#ffffff;"}}></i>
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-10 pt-5 text-center text-gray-400 text-sm">
-        <p>&copy; {new Date().getFullYear()} Appmine Studio. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Appmine Studio. All Rights Reserved.</p> 
       </div>
     </footer>
   );

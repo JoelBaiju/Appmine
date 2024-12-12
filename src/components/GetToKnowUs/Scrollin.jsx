@@ -329,12 +329,12 @@ function Scrollin() {
             <div className="w-screen h-screen flex items-center justify-center absolute z-30" id="box3">
                 <h1 className='text-3xl md:text-5xl kantumruy font-semibold'>Our top priorities are</h1>
             </div>
-            <div className=" w-screen h-screen flex gap-20 items-center  md:flex-row flex-col justify-center absolute z-20" id="box4">
+            <div className="noisebg w-screen h-screen flex gap-20 items-center  md:flex-row flex-col justify-center absolute z-20" id="box4">
                 <MotoCards color={'black'} head={'QUALITY'} body={'We believe that the time invested in creating something innovative is never wasted. If the end result is truly groundbreaking, every moment spent on it becomes worthwhile.'} />
                 <MotoCards color={'black'} head={'INNOVATION'} body={'Above all else we value quality. A project isn’t complete until it produces optimal results.'} />
                 <MotoCards color={'black'} head={'SERVICE'} body={'Providing the best customer experience is always top priority. Beyond providing a quality product, you’ll have a seamless experience.'} />
             </div>    
-            <div className=" w-screen h-screen flex md:flex-row flex-col gap-20 items-center  justify-center absolute z-10" id="box5">
+            <div className=" noisebg w-screen h-screen flex md:flex-row flex-col gap-20 items-center  justify-center absolute z-10" id="box5">
                 <MotoCards color={'white'} head={'VALUE'} body={'Cost is irrelevant unless we provide the best value to our customers.'} />
                 <MotoCards color={'white'}  head={'INTEGRITY'} body={'We will only operate with the highest standard of integrity and honesty.'} />
                 <MotoCards color={'white'} head={'LOYALITY'} body={'We take care of our customers, partners, and our own.'} />
