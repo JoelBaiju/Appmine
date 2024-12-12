@@ -257,15 +257,15 @@ function Scrollin() {
                     start: "top top",
                     end: "+=4000",
                     pin: true,
-                    scrub: true,
+                    scrub: 3,
                     // markers: true,
                 }
             })
                 .fromTo("#box1", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 1 })
                 .to("#box1", { opacity: 0, duration: 0.5 })
-                .fromTo("#box2", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 1 })
+                .fromTo("#box2", {  filter: "blur(1rem)" }, { filter: "blur(0rem)", duration: 1 })
                 .to("#box2", { opacity: 0, duration: 0.5 })
-                .fromTo("#box3", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 1 })
+                .fromTo("#box3", {  filter: "blur(1rem)" }, {  filter: "blur(0rem)", duration: 1 })
                 .to("#box3", { opacity: 0, duration: 0.5 })
 
                 .fromTo("#box4", {  filter: "blur(1rem)" }, { filter: "blur(0rem)", duration: 1 })
@@ -280,15 +280,15 @@ function Scrollin() {
                     start: "top top",
                     end: "+=4000", 
                     pin: true,
-                    scrub: true,
+                    scrub: 3,
                     // markers: true,
                 }
             })
                 .fromTo("#box1", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 0.5 })
                 .to("#box1", { opacity: 0, duration: 0.25 })
-                .fromTo("#box2", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 0.5 })
+                .fromTo("#box2", { filter: "blur(1rem)" }, {  filter: "blur(0rem)", duration: 0.5 })
                 .to("#box2", { opacity: 0, duration: 0.25 })
-                .fromTo("#box3", { scale: 0.5, filter: "blur(1rem)" }, { scale: 1, filter: "blur(0rem)", duration: 0.5 })
+                .fromTo("#box3", { filter: "blur(1rem)" }, { filter: "blur(0rem)", duration: 0.5 })
                 .to("#box3", { opacity: 0, duration: 0.25 })
 
                 .fromTo("#box4", { filter: "blur(1rem)" }, {filter: "blur(0rem)", duration: 0.5 })
@@ -303,7 +303,7 @@ function Scrollin() {
 
     return (
         <div id="container" className="bg-black text-white relative z-0 h-screen">
-            <div className="absolute w-screen h-screen z-50 flex items-center backdrop-blur-lg justify-center" id="box1">
+            <div className="absolute w-screen h-screen z-50 flex items-center justify-center" id="box1">
                 <div>
 
 
