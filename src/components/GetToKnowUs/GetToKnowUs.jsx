@@ -12,6 +12,8 @@ import kriyadooverview from '../../assets/images/KriyadoOverview.png'
 import skystreamoverview from '../../assets/images/SkyStreamOverview.png'
 import tripifymeoverview from '../../assets/images/TripifymeOverview.png'
 import tripifyme from '../../assets/images/tripifyme.png'
+import icareindiaSS from '../../assets/images/icareindia.png'
+import spenmaxSS from '../../assets/images/spenmaxSS.png'
 
 
 import Portfolio from "./Portfolio";
@@ -72,12 +74,14 @@ function GetToKnowUs() {
         image:spenmax,
         name:'Spenmax',
         shortdesription:' E-commerce Application (Web & Mobile)',
-        overview:'',
+        overview:spenmaxSS,
         about:'Spenmax is a feature-rich e-commerce platform designed to offer users the best deals on utilities through a seamless and secure shopping experience. It integrates real-time functionalities and user-focused features to enhance both buyer and admin operations.',
         technologies:['Python (Django), React  '],
         features:['Expert Matching Algorithm: Patients answer a predefined set of questions to identify symptoms, which are analyzed to assign the most suitable specialist for their needs.','Secure Payment Integration: A user-friendly and safe interface for seamless transactions.','Privacy-Centric Authentication: Advanced systems to protect user data and ensure confidentiality.'],
         linktowebsite:''
-    }, ]
+    },
+  
+     ]
     
     
   
