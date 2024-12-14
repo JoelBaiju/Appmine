@@ -10,6 +10,12 @@
   font-optical-sizing: auto;
 }
 
+.big {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
 
 @keyframes fall {
   0% {

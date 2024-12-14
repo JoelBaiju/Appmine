@@ -148,7 +148,10 @@ function Clients() {
                     ))}
                 </div>
             </div>
-            <div className='h-96'></div>
+            <div className='flex kantumruy gap-4 flex-col  justify-center items-center text-white  w-full h-96'>
+                <h1 className='text-sm' >KEEP SCROLLING</h1>
+                <h1><i className="text-white animate-bounce fa-solid fa-angle-down" ></i></h1>
+            </div>
      
         </div>
     );

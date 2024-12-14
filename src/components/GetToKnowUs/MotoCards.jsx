@@ -2,14 +2,13 @@ import React from 'react'
 
 function MotoCards({ head, body,color }) {
     return (
-        <div className='w-full text-center md:w-3/12 h-40 bg-ppmine relative flex-col items-center justify-center'>
+        <div className='w-full p-10 text-left md:w-3/12 h-40 bg-ppmine relative flex-col items-center justify-center'>
             
             <div className=''>
-                <h1 className='text-5xl text-white kantumruy'>{head}</h1>
-              
+                <h1 className='text-xl md:text-3xl text-white kantumruy'>{head}</h1>
             </div>
-            <div className='text-center text-white  w-full'>
-                <p className='kantumruy w-full text-xl'>{body}</p>
+            <div className='text-left text-white  w-full'>
+                <p className='kantumruy w-full md:text-base text-sm'>{body}</p>
             </div>
 
         </div>

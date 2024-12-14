@@ -70,7 +70,7 @@ function WeBuild() {
                         </div>
                     </div>
                     <div className='pr-3'>
-                        <p className='text-white text-center md:text-2xl text-sm rise'>Our expert <br />team builds <br />robust <br />applications<br />for both ios and <br />android</p>
+                        <p className='text-white text-left md:text-2xl text-sm rise'>Our expert <br />team builds <br />robust <br />applications<br />for both ios and <br />android</p>
                     </div>
                 </div>
 
