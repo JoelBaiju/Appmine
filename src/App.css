@@ -85,7 +85,7 @@
 
 
 .gradient-text {
-  background: linear-gradient(to right, #1f250b, #c5e937, #23290b);
+  background: linear-gradient(to right, #1f250b, #b9db33, #23290b);
   background-clip: text; /* Clips the background to the text */
   -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
 }
@@ -109,4 +109,9 @@
 .gradient-border {
   background-image: linear-gradient(to right, #1f250b, #c5e937, #23290b); /* Apply the gradient */
   border-radius: 5rem; /* Apply rounded corners */
+}
+
+
+.text-shadow {
+  text-shadow: 1px 1px 80px rgb(255, 255, 255)
 }

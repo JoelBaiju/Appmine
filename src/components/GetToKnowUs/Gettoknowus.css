@@ -46,6 +46,14 @@
 
 
 
+.doodle{
+  background-image: url('../../assets/images/doodle_bg.jpg');
+  background-size: contain;
+  /* background-blend-mode:overlay; */
+
+}
+
+
 
 /* From Uiverse.io by SelfMadeSystem */ 
 /*
