@@ -277,10 +277,10 @@ import React, { useEffect } from 'react'
 import aboutusbg from '../../assets/images/AboutBG.jpg'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import TextRevealByWord from '../MagicUi/TextRevealByWord';
-import { FlipText } from '../MagicUi/FlipText';
+import TextRevealByWord from '../Magic/TextRevealByWord';
+import { FlipText } from '../Magic/FlipText';
 import { div, title } from 'framer-motion/client';
-import FlickeringGrid from '../MagicUi/FlickeringGrid'
+import FlickeringGrid from '../Magic/FlickeringGrid'
 
 gsap.registerPlugin(ScrollTrigger);
 

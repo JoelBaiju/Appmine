@@ -1,0 +1,17 @@
+.clipped-image {
+    clip-path: url(#brushclip);
+    /* width: 1500px; Adjust width as needed */
+}
+
+
+@font-face {
+    font-family: 'capsule3regular';
+    src: url('../../../assets/fonts/capsule3-webfont.woff2') format('woff2'),
+         url('../../../assets/fonts/capsule3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-7 {
+	font-family: "capsule3regular", sans-serif;
+	font-weight: 400;
+}

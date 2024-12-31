@@ -1,0 +1,10 @@
+div {
+    
+    background: radial-gradient(circle, red, blue);
+  }
+  
+  
+  .custom {
+    background: radial-gradient(circle at 0% 55%, red, blue); /* Custom point */
+  }
+  

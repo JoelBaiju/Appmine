@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShineBorder } from '../MagicUi/ShineBorder'
+import { ShineBorder } from '../Magic/ShineBorder'
 import './Modals.css'
 
 function JoinTeam({closemodal}) {

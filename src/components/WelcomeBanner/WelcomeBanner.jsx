@@ -1,6 +1,9 @@
 import React from 'react'
 import './WelcomeBanner.css'
 import ParticlesBackground from '../particle/ParticlesBackground';
+import Plane from '../Objects/Plane';
+import { useEffect } from 'react';
+
 function WelcomeBanner() {
   // const viewportfolio=()=>{
   //   const portfolio=document.getElementById('portfolio')
@@ -14,27 +17,35 @@ function WelcomeBanner() {
   };
   
   
-
+ 
+  useEffect(()=>{
+    setTimeout(() => {
+      document.getElementById('welcome').classList.add('rise-animation')
+      document.getElementById('splash').classList.add('opacity-0')
+      document.getElementById('splash').classList.add('scale-0')
+    }, 5000);
+  },[])
 
   return (
 
     <div className='  bg-black flex items-center flex-col justify-center  relative h-screen     '>
-        <div className='welcomebannergradient w-full h-screen absolute z-20 '></div>
-
-        <div className='welcomebannerimage ,d:welcomebannerimagephone  w-full h-screen absolute z-10' ><ParticlesBackground/></div>
-
-        <div className='text-white  flex items-center flex-col justify-center rise-animation absolute z-20'>
+        {/* <div className='welcomebannergradient w-full h-screen absolute z-20 '></div> */}
 
 
-          <h1 className=" poppins font-semibold md:font-medium poppins  gradient-text text-center text-4xl md:text-8xl" >
-            Welcome To <br/> Appmine Studio
+        <div className='welcomebannerimage ,d:welcomebannerimagephone  w-full h-full absolute z-10' ><ParticlesBackground/></div>
+
+        <div id='welcome'  className='text-white  flex items-center flex-col justify-center  absolute z-20'>
+
+
+          <h1 className=" astralaga font-semibold md:font-medium leading-normal  gradient-text-gra text-[#FFFCE1] text-center text-4xl md:text-8xl" >
+          "Transforming Ideas into Masterpieces <span className='text-2xl'> – The Art of Development"  </span>
           </h1>
 
-          <p className='poppins font-extralight md:text-xl mt-5'>The ultimate destination for software solutions</p>
+          <p className='gmarket pt-3  font-extralight md:text-xs mt-5 text-[#ababab] '>Powered by Appmine Studio</p>
 
 
 
-          <button className='   mt-5 border-2 border-neutral-700 text-sm flex flex-col justify-center items-center px-6 py-1 rounded-3xl text-center hover:bg-appmine transition-all duration-300 ease-out cursor-pointer  ' onClick={viewportfolio}>View Portfolio</button>
+          <button className='   mt-5 border-2 border-neutral-700 text-sm text-[#ababab] flex flex-col justify-center items-center px-6 py-1 rounded-3xl text-center transition-all duration-300 ease-out cursor-pointer gmarket myshine_gray ' onClick={viewportfolio}>See Our Gallery</button>
         </div>
 
     

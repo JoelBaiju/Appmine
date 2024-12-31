@@ -16,15 +16,44 @@
 }
 
 
+.bebas {
+  font-family: "Bebas Neue", serif;
+}
+
+
+@font-face {
+  font-family: 'gmarket';
+  src: url('assets/fonts/GmarketSansLight.otf') format('opentype');
+  font-weight: thin;
+  font-style: normal;
+}
+
+.gmarket{
+  font-family:"gmarket",serif;
+}
+
+@font-face {
+  font-family: 'astralaga';
+  src: url('assets/fonts/astralaga-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.astralaga{
+  font-family:"astralaga",serif;
+}
+
+
+
 
 @keyframes fall {
   0% {
-    transform: translateY(-50px); /* Start slightly below */
-    opacity: 0; /* Start fully transparent */
+    transform: translateY(-50px); 
+    opacity: 0;
   }
   100% {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* Fully opaque */
+    transform: translateY(0); 
+    opacity: 1; 
   }
 }
 
@@ -32,86 +61,134 @@
 
 @keyframes rise {
   0% {
-    transform: translateY(50px); /* Start slightly below */
-    opacity: 0; /* Start fully transparent */
+    transform: translateY(50px); 
+    opacity: 0; 
   }
   100% {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* Fully opaque */
+    transform: translateY(0); 
+    opacity: 1; 
   }
 }
 
 
 @keyframes slide {
   0%{
-      transform: translateX(50px); /* Start slightly below */
-      opacity: 0; /* Start fully transparent */
+      transform: translateX(50px); 
+      opacity: 0; 
   }
   100% {
-      transform: translateX(0); /* End at original position */
-      opacity: 1; /* Fully opaque */
+      transform: translateX(0); 
+      opacity: 1; 
     }
   
 }
 
-/* Apply animation to the text elements */
 .fall-animation {
-  animation: fall 1s ease-out forwards; /* Adjust duration and easing as needed */
+  animation: fall 1s ease-out forwards; 
 }
 .rise-animation {
-  animation: rise 1s ease-out forwards; /* Adjust duration and easing as needed */
+  animation: rise 1s ease-out forwards; 
 }
 
 .slide-animation {
   animation : slide 0.9s ease-out forwards;
 }
 
+.remove_scrollbar::-webkit-scrollbar{
+  width: 0px; 
+  height: 0px;  
+}
 
 
 ::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
-  height: 10px; /* Height for horizontal scrollbar */
+  width: 10px; 
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000; /* Light gray background */
+  background: #000000; 
   border-radius: px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4b4b4b; /* Dark gray handle */
+  background: #4b4b4b; 
   border-radius: 10px;
 }
 
 
 .gradient-text {
-  background: linear-gradient(to right, #1f250b, #b9db33, #23290b);
-  background-clip: text; /* Clips the background to the text */
-  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  background: linear-gradient(90deg, rgba(74,84,201,1) 0%, rgba(199,173,250,1) 53%, rgba(246,245,253,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 .gradient-text-gray {
   background: linear-gradient(to right, #646464, #939393, #9b9b9b);
   background-clip: text; 
-  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  -webkit-text-fill-color: transparent; 
 }
 
 .gradient-text-blue {
   background: linear-gradient(to right, #003083, #2b79ff,#023287);
    background-clip: text;
-  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  -webkit-text-fill-color: transparent;
 }
 .gradient-text-pink {
   /* background: linear-gradient(to right, #612C70, #B03E95); */
   background-clip: text; 
-  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  -webkit-text-fill-color: transparent; 
 }
 
 .gradient-border {
-  background-image: linear-gradient(to right, #1f250b, #c5e937, #23290b); /* Apply the gradient */
-  border-radius: 5rem; /* Apply rounded corners */
+  background-image: linear-gradient(to right, #1f250b, #c5e937, #23290b);
+  border-radius: 5rem; 
 }
 
 
 .text-shadow {
   text-shadow: 1px 1px 80px rgb(255, 255, 255)
+}
+
+.white-shadow{
+  box-shadow: rgba(255, 255, 255, 0.359) 0px 4px 16px, rgba(255, 255, 255, 0.408) 0px 8px 24px, rgba(255, 255, 255, 0.452) 0px 16px 56px;}
+
+  .black-shadow{
+    box-shadow: rgba(8, 8, 8, 0.566) 0px 13px 27px -5px, rgba(0, 0, 0, 0.642) 0px 8px 16px -8px;
+  }  
+  
+
+  .blue-shadow{
+    box-shadow: 
+    rgba(255, 119, 0, 0.56) -50px -50px 200px, 
+    rgba(0, 136, 255, 0.56) 50px 50px 200px;   
+   
+  }  
+  
+    
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+  @keyframes shine {
+    0% {
+      background-size: 2000%;
+      background-position: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    100% {
+      background-size: 2000%;
+      background-position: 0%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+   
+  }
+  
+
+  
+.myshine_gray{
+  background: linear-gradient(107deg, rgb(130, 131, 131) 0%, rgb(255, 255, 255) 6%, rgb(126, 126, 126) 11%);
+  animation:  shine 4s linear infinite ; 
 }

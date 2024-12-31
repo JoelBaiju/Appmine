@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import logo from '../../assets/images/AppmineChirstmasLogo.png'
+import logo from '../../assets/images/Appmine logo new BG T.png'
 import menu from '../../assets/images/menu.png'
 import './Navbar.css'
 import Menu from '../Menu/Menu'
@@ -92,18 +92,18 @@ function Navbar({addblur,removeblur}) {
         <div className='bg-black h-12 p-4  flex flex-row justify-between z-20 relative  '>
 
             <div className='flex items-center flex-row h-full'>
-                <img  src={logo} className='w-10'  alt="" />
+                <img  src={logo} className='h-9'  alt="" />
             </div>
 
             
 
             <div className=' hidden md:block '>
                 <div className=' flex flex-row'>
-                    <p className='text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Home</p>
-                    <p onClick={(e)=>openmodal('projectenquiry')}  className='text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Project Enquiry</p>
-                    <p onClick={(e)=>openmodal('jointeam')}        className='text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Join Our Team</p>
+                    <p className='gmarket text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Home</p>
+                    <p onClick={(e)=>openmodal('projectenquiry')}  className='gmarket text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Project Enquiry</p>
+                    <p onClick={(e)=>openmodal('jointeam')}        className='gmarket text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Join Our Team</p>
                     {/* <p className='text-neutral-500 font-semibold text-xs mx-5 hover:text-neutral-400 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer'>Contact</p> */}
-                </div>
+                </div>  
             </div>
     
  

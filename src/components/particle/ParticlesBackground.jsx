@@ -23,7 +23,7 @@ const ParticlesBackground = () => {
         window.particlesJS('particles-js', {
           particles: {
             number: { value: 50, density: { enable: true, value_area: 800 } },
-            color: { value: '#c5e937' },
+            color: { value: '#FFFCE1' },
             shape: {
               type: 'circle',
               stroke: { width: 0, color: '#000000' },

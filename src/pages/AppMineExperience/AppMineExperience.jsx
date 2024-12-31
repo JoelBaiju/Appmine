@@ -4,7 +4,7 @@ import WelcomeBanner from '../../components/WelcomeBanner/WelcomeBanner'
 import WeBuild from '../../components/WeBuild/WeBuild'
 import Products from '../../components/Products/Products'
 import GetToKnowUs from '../../components/GetToKnowUs/GetToKnowUs'
-import TextRevealByWord from '../../components/MagicUi/TextRevealByWord'
+import TextRevealByWord from '../../components/Magic/TextRevealByWord'
 import Footer from '../../components/Footer/Footer'
 
 function AppMineExperience() {
@@ -29,7 +29,7 @@ function AppMineExperience() {
         </div>
        
         <WeBuild/>
-        <Products/>
+        {/* <Products/> */}
         <GetToKnowUs/>
         <Footer/>     
  

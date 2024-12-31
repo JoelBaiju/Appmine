@@ -1,9 +1,14 @@
 import React from 'react';
-import appminelogo from '../../assets/images/Appmine logo B.png';
+import appminelogo from '../../assets/images/Appmine logo new BG T.png';
 
 function Footer() {
+  const redirectToWhatsApp = (id) => {
+    const phoneNumber = '9048001820';
+    const whatsappUrl = `https://wa.me/${7034730964}`;
+    window.open(whatsappUrl, 'Heyy');
+    }
   return (
-    <footer className="w-full bg-neutral-950 text-white py-10">
+    <footer className="w-full gmarket bg-neutral-950 text-white py-10">
       <div className="container mx-auto px-10 flex flex-col gap-10 ">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start">
@@ -58,18 +63,18 @@ function Footer() {
             <div className='w-1/2'>
               <h2 className="font-semibold text-lg mb-4 ">Social</h2>
               <div className="flex space-x-4 text-gray-300">
-                <a href=" " target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                <a href="https://www.instagram.com/app.minestudio?igsh=MWo1c3RrenQyaHoxNQ==" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                   <i className="fa-brands fa-instagram fa-xl" style={{ color: "#ffffff" }}></i>
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-                  <i className="fa-brands fa-facebook fa-xl" style={{ color: "#ffffff" }}></i>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                <button onClick={redirectToWhatsApp} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  <i className="fa-brands fa-whatsapp fa-xl" style={{ color: "#ffffff" }}></i>
+                </button>
+                <a href="https://www.linkedin.com/company/appminestudio/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                   <i className="fa-brands fa-linkedin fa-xl" style={{ color: "#ffffff" }}></i>
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                {/* <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                   <i className="fa-brands fa-twitter fa-xl" style={{ color: "#ffffff" }}></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -80,7 +85,7 @@ function Footer() {
 
 
 
-      <div className="border-t-[1px]  mt-10 pt-5 text-center text-gray-400 text-sm">
+      <div className="border-t-[1px] border-white  mt-10 pt-5 text-center text-gray-400 text-sm">
         <p>&copy; {new Date().getFullYear()} Appmine Studio. All Rights Reserved.</p>
       </div>
     </footer>

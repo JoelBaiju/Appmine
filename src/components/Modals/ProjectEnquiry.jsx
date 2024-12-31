@@ -1,6 +1,6 @@
 import React from 'react'
-import { BorderBeam } from '../MagicUi/BorderBeam'
-import { ShineBorder } from '../MagicUi/ShineBorder'
+import { BorderBeam } from '../Magic/BorderBeam'
+import { ShineBorder } from '../Magic/ShineBorder'
 import Button from '../Button/Button'
 
 function ProjectEnquiry({closemodal}) {

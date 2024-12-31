@@ -1,46 +1,66 @@
-/* .web{
-    background-image: url('../../assets/images/WebBG.png');
-    background-position: right;
-    background-size: cover;
-} */
 
-.appsbg{
-    background-image: url('../../assets/images/Mountain View.gif');
-    background-position: right;
-    background-size: cover;
-}
-
-.appsheading{
-    background-color: rgba(255, 255, 255, 0.403);
-}
-
-.apps{
-    background-image: url('../../assets/images/Mountain View.gif');
-    background-position: center;
-    background-size: cover;
-}
 
 .game{
-    box-shadow: 
-    rgba(241, 197, 201, 0.25) 0px 54px 85px 20px, 
-    rgba(241, 197, 201, 0.12) 0px -12px 50px 10px, 
-    rgba(241, 197, 201, 0.12) 0px 4px 16px 5px, 
-    rgba(88, 88, 88, 0.17) 0px 12px 23px 15px, 
-    rgba(241, 197, 201, 0.09) 0px -3px 15px 5px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #201317 0%, #0D0B16 90% );
     
 
 }
 
 
-.aitext{
-    color: rgba(255, 255, 255, 0.49);
+
+
+
+
+@keyframes wave {
+    0% {
+      transform:  translateY(0);
+    }
+    25% {
+      transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75% {
+      transform:  translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.char {
+    filter: drop-shadow(-20px 20px 20px #000000b1);
+    animation: wave 8s ease-in-out infinite;
+
 }
 
-.glassgray{
-    backdrop-filter: blur(10px);
-    
+
+
+
+#twin1 {
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.webBg{
-    background-color: #03040D;
+
+#twin2 {
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+
+.gamebody{
+background: radial-gradient(circle, rgba(213,255,255,1) 0%, rgba(213,255,255,1) 0%, rgba(104,168,255,1) 65%, rgba(80,126,243,1) 76%, rgba(80,126,243,1) 82%, rgba(63,69,204,1) 99%);
+
+}
+
+
+
+.sp{
+  background-image: url('../../assets/images/slantedPillers.png');
+  background-size: cover;
+}
+
